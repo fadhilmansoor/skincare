@@ -12,7 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "animate.css": "^4.1.1",
-    "next": "15.3.2",
+    "next": "^15.5.9",
     "react": "^19.0.0",
     "react-before-after-slider-component": "^1.1.8",
     "react-bootstrap": "^2.10.10",
@@ -29,5 +29,4 @@
     "sass": "^1.89.0",
     "typescript": "^5"
   }
-  
 }
