@@ -3,7 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/component/PageBanner";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
-import { shopdata } from "@/constant/alldata";
+
 import Image from "next/image";
 
 
@@ -13,7 +13,7 @@ function Shop() {
             <Header />
             <main className="page-content">
                 <PageBanner title={"Shop"} />
-                <section className="content-inner bg-light">
+                {/* <section className="content-inner bg-light">
                     <div className="container">
                         <div className="row m-b30 m-md-b0">
                             {shopdata.map((data, i) => (
@@ -63,7 +63,7 @@ function Shop() {
                             </ul>
                         </nav>
                     </div>
-                </section>
+                </section> */}
             </main>
             <Footer />            
         </>
