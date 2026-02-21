@@ -30,7 +30,7 @@ const HeroBanner = () => {
         setTimeout(() => {
             setCurrent(index);
             setAnimating(false);
-        }, 400);
+        }, 10);
     }, [animating]);
 
     const prev = () => {
