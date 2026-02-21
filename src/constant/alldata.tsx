@@ -216,27 +216,46 @@ export const accordiandata : AcordioProp[] = [
 ]
 // flexswiper component 
 export const flexswiperdata = [
-    { id: 1, image: IMAGES.servicemiddle1, title: 'Cosmetic Dermatology', },
-    { id: 2, image: IMAGES.servicemiddle2, title: 'Dermatologic Surgery', },
-    { id: 3, image: IMAGES.servicemiddle3, title: 'Earlobe Repair', },
-    { id: 4, image: IMAGES.servicemiddle4, title: 'Laser Resurfacing', },
-    { id: 6, image: IMAGES.servicemiddle5, title: 'Anti Aging', },
-]
+  {
+    id: 1,
+    image: IMAGES.servicemiddle1,
+    title: "Dental Services",
+    desc: "Comprehensive dental care including general dentistry, cosmetic treatments, teeth whitening, implants, veneers, orthodontics, and smile makeovers.",
+  },
+  {
+    id: 2,
+    image: IMAGES.servicemiddle2,
+    title: "Dermatology & Aesthetic Services",
+    desc: "Advanced skin and aesthetic solutions for healthy, radiant skin, including dermatology care, laser treatments, skin rejuvenation, and facial therapies.",
+  },
+  {
+    id: 3,
+    image: IMAGES.servicemiddle3,
+    title: "Cosmetic & Non-Surgical Aesthetics",
+    desc: "Enhance your natural beauty with non-surgical treatments such as Botox, dermal fillers, facial contouring, and skin tightening procedures.",
+  },
+  {
+    id: 4,
+    image: IMAGES.servicemiddle4,
+    title: "Hair Restoration",
+    desc: "Personalized hair restoration solutions including FUE/DHI hair transplants, beard and eyebrow transplants, and effective hair loss treatments.",
+  },
+];
 //  shop 
-export const shopdata = [
-    { image: IMAGES.shop1, dealy: '0.2s', title: 'Night beauty', },
-    { image: IMAGES.shop2, dealy: '0.4s', title: 'Body Serum', },
-    { image: IMAGES.shop3, dealy: '0.6s', title: 'Body Polish', },
-    { image: IMAGES.shop4, dealy: '0.8s', title: 'Body Serum', },
-    { image: IMAGES.shop2, dealy: '1.0s', title: 'Body Wash', },
-    { image: IMAGES.shop1, dealy: '1.2s', title: 'Body Oil', },
-    { image: IMAGES.shop3, dealy: '1.4s', title: 'Body Cream', },
-    { image: IMAGES.shop4, dealy: '1.6s', title: 'Body Serum', },
-    { image: IMAGES.shop3, dealy: '1.8s', title: 'Repairing Body Gel', },
-    { image: IMAGES.shop1, dealy: '2.0s', title: 'Body Wash', },
-    { image: IMAGES.shop4, dealy: '2.2s', title: 'Body Scrub', },
-    { image: IMAGES.shop2, dealy: '2.4s', title: 'Body Mist', },
-]
+// export const shopdata = [
+//     { image: IMAGES.shop1, dealy: '0.2s', title: 'Night beauty', },
+//     { image: IMAGES.shop2, dealy: '0.4s', title: 'Body Serum', },
+//     { image: IMAGES.shop3, dealy: '0.6s', title: 'Body Polish', },
+//     { image: IMAGES.shop4, dealy: '0.8s', title: 'Body Serum', },
+//     { image: IMAGES.shop2, dealy: '1.0s', title: 'Body Wash', },
+//     { image: IMAGES.shop1, dealy: '1.2s', title: 'Body Oil', },
+//     { image: IMAGES.shop3, dealy: '1.4s', title: 'Body Cream', },
+//     { image: IMAGES.shop4, dealy: '1.6s', title: 'Body Serum', },
+//     { image: IMAGES.shop3, dealy: '1.8s', title: 'Repairing Body Gel', },
+//     { image: IMAGES.shop1, dealy: '2.0s', title: 'Body Wash', },
+//     { image: IMAGES.shop4, dealy: '2.2s', title: 'Body Scrub', },
+//     { image: IMAGES.shop2, dealy: '2.4s', title: 'Body Mist', },
+// ]
 // blog 
 
 export interface BlogItem {
@@ -298,10 +317,20 @@ export const footermenu = [
         title: 'Our Stores', span1: 'New York', span2: 'London SF', span3: 'Edinburgh', span4: 'Los Angeles', span5: 'Las Vegas',
         link1: '#', link2: '#', link3: '#', link4: '#', link5: '#',
     },
-    {
-        title: 'Quick Links', span1: 'About Us', span2: 'Our Services', span3: 'Our Team', span4: 'Appointments', span5: 'Contact Us',
-        link1: '/about-us', link2: '/services', link3: '/team', link4: '/appointment', link5: '/contact-us',
-    },
+ {
+  title: 'Social Media',
+  span1: 'Facebook',
+  span2: 'Instagram',
+  span3: 'LinkedIn',
+  span4: 'TikTok',
+  span5: 'WhatsApp',
+
+  link1: 'https://facebook.com/yourpage',
+  link2: 'https://instagram.com/yourpage',
+  link3: 'https://linkedin.com/company/yourcompany',
+  link4: 'https://tiktok.com/@yourusername',
+  link5: 'https://wa.me/971586050060',
+},
 ]
 export const footermenu2 = [
     { title: 'Call Us', icon: <i className="feather icon-phone" />, paragraph: '+1 123 456 7890', },
@@ -341,42 +370,43 @@ export const filterdata2 = [
     { id: 4, image: IMAGES.shop4, title: 'Green beauty', kind: 'Daily Offers Cosmetics', },
 ]
 
-interface MenuItemContent {
+export interface MenuItemContent {
   title: string;
   to: string;
-  image?: string; 
+  image?: string;
 }
 
-interface MenuItem {
+export interface MenuItem {
+  id?: string | number;
   title: string;
+  to?: string;
+  image?: string;
   classChange?: string;
-  content: MenuItemContent[];
+  content?: { id?: string | number; title: string; to: string; image?: any }[];
 }
-
 
 // hedaer menu 
 export const menudata : MenuItem[] = [
-    {
-        title: "Home",
-        classChange: "has-mega-menu",
-        content: [
-            { title: "01 Skin Care", to: "/", image: IMAGES.demohome3, },
-            { title: "02 Dentist", to: "https://next-clinicmaster-dentist.vercel.app/", image: IMAGES.demohome2, },
-            { title: "03 Medical", to: "https://next-clinicmaster-medical.vercel.app/", image: IMAGES.demohome1, },
-        ],
-    },
-    {
-        title: "Pages",
-        content: [
-            { title: "About Us", to: "/about-us" },
-            { title: "About Us 2", to: "/about-us-2" },
-            { title: "Appointment", to: "/appointment" },
-            { title: "Pricing Table", to: "/pricing-table" },
-            { title: "Testimonial", to: "/testimonial" },
-            { title: "Faqs", to: "/faqs" },
-            { title: "Error 404", to: "/error-404" },
-        ],
-    },
+{
+  title: "Home",
+  to: "/",
+},
+{
+  title: "About Us",
+  to: "/about-us",
+},
+    // {
+    //     title: "Pages",
+    //     content: [
+    //         { title: "About Us", to: "/about-us" },
+    //         { title: "About Us 2", to: "/about-us-2" },
+    //         { title: "Appointment", to: "/appointment" },
+    //         { title: "Pricing Table", to: "/pricing-table" },
+    //         { title: "Testimonial", to: "/testimonial" },
+    //         { title: "Faqs", to: "/faqs" },
+    //         { title: "Error 404", to: "/error-404" },
+    //     ],
+    // },
     {
         title: "Team",
         content: [
@@ -388,15 +418,7 @@ export const menudata : MenuItem[] = [
         title: "Services",
         content: [
             { title: "Services", to: "/services" },
-            { title: "Service Detail", to: "/service-detail" },
             { title: "Service Detail 2", to: "/service-detail-2" },
-        ],
-    },
-    {
-        title: "Shop",
-        content: [
-            { title: "Shop", to: "/shop" },
-            { title: "Shop Details", to: "/shop-details" },
         ],
     },
     {

@@ -11,6 +11,7 @@ import Header from "@/layout/Header";
 import AfterTreatment from "@/component/AfterTreatment";
 import CompareSwiper from "@/component/CompareSwiper";
 import Image from "next/image";
+import AllServicesGrid from "@/component/AllServicesGrid";
 
 
 function Services() {
@@ -19,19 +20,19 @@ function Services() {
             <Header />
             <main className="page-content">
                 <PageBanner title={"Services"} />
+
+                {/* ── All Services Grid ── */}
                 <section className="content-inner-2 bg-light">
                     <div className="container">
-                        <div className="section-head style-3 m-b30 text-center wow fadeInUp" data-wow-delay="0.2s"
-                            data-wow-duration="0.8s">
-                            <h2 className="title"> Transform Your Skin with Our <br /> Advanced Dermatology Treatments </h2>
-                            <p className="mw-100"> Experience a transformative journey that sculpts your physique and unlocks your full potential. </p>
+                        <div className="section-head style-3 m-b30 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
+                            <h2 className="title">Transform Your Skin with Our <br /> Advanced Dermatology Treatments</h2>
+                            <p className="mw-100">Experience a transformative journey that sculpts your physique and unlocks your full potential.</p>
                         </div>
-                        <FlexSwiper />
-                        <div className="dz-separator style-3">
-                            <Link href="/services" className="btn separator-badge fw-medium">View All Services</Link>
-                        </div>
+                        <AllServicesGrid />
                     </div>
                 </section>
+
+                {/* ── After Treatment ── */}
                 <section className="content-inner bg-light bg-bottom-half-white">
                     <div className="container">
                         <div className="section-head style-3 text-center m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
@@ -40,6 +41,8 @@ function Services() {
                         <AfterTreatment />
                     </div>
                 </section>
+
+                {/* ── Marquee 1 ── */}
                 <div className="dz-marquee style-1 bg-secondary overflow-hidden">
                     <ul className="marquee-list">
                         {marqueelist1.map((data, i) => (
@@ -47,6 +50,8 @@ function Services() {
                         ))}
                     </ul>
                 </div>
+
+                {/* ── Why Choose ── */}
                 <section className="content-inner">
                     <div className="container">
                         <div className="row content-wrapper style-14 align-items-center">
@@ -54,10 +59,16 @@ function Services() {
                         </div>
                     </div>
                 </section>
+
+                {/* ── Compare Swiper ── */}
                 <section className="content-inner-1 overflow-hidden">
                     <CompareSwiper />
                 </section>
+
+                {/* ── Gallery ── */}
                 <Image src={IMAGES.gallery} alt="gallery" className="w-100" />
+
+                {/* ── Testimonials ── */}
                 <section className="content-inner pt-0">
                     <div className="container">
                         <div className="section-head style-1 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
@@ -67,6 +78,8 @@ function Services() {
                         <TestimoniulSwiper />
                     </div>
                 </section>
+
+                {/* ── Marquee 2 ── */}
                 <div className="dz-marquee style-2">
                     <ul className="marquee-list">
                         {marqueelist2.map((data, i) => (
@@ -74,6 +87,8 @@ function Services() {
                         ))}
                     </ul>
                 </div>
+
+                {/* ── FAQ ── */}
                 <section className="content-inner">
                     <div className="container">
                         <div className="row content-wrapper style-5 align-items-center">
@@ -82,8 +97,8 @@ function Services() {
                     </div>
                 </section>
             </main>
-            <Footer />            
+            <Footer />
         </>
-    )
+    );
 }
 export default Services;

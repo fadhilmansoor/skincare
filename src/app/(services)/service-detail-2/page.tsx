@@ -147,13 +147,13 @@ function ServiceDetail2() {
                                         <div className="dz-media">
                                             <Image src={data.image} alt="/" />
                                             <Link href="/appointment" className="btn btn-primary"> <i className="feather icon-calendar m-r5" /> Appointment Now </Link>
-                                            <ul className="dz-social">
+                                            {/* <ul className="dz-social">
                                                 <li> <Link className="linkedin" href="https://www.linkedin.com/showcase/dexignzone/" target="_blank"> <i className="fa-brands fa-linkedin" /> </Link> </li>
                                                 <li> <Link className="instagram" href="https://www.instagram.com/dexignzone/" target="_blank"><i className="fa-brands fa-instagram" /> </Link> </li>
                                                 <li> <Link className="facebook" href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /> </Link> </li>
                                                 <li> <Link className="x-twitter" href="https://x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /> </Link> </li>
                                                 <li> <Link className="youtube" href="https://www.youtube.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /> </Link> </li>
-                                            </ul>
+                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@ function ServiceDetail2() {
                 <section className="content-inner-1 bg-light overflow-hidden">
                     <CompareSwiper />
                 </section>
-                <section className="bg-light content-inner-2">
+                {/* <section className="bg-light content-inner-2">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-10">
@@ -189,8 +189,8 @@ function ServiceDetail2() {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="content-inner-1 bg-light">
+                </section> */}
+                {/* <section className="content-inner-1 bg-light">
                     <div className="container">
                         <div className="content-bx style-10 row g-0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                             <div className="col-md-6">
@@ -206,7 +206,7 @@ function ServiceDetail2() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
             <Footer />            
         </>
