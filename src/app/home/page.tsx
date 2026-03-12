@@ -101,13 +101,7 @@ const HomePage = () => {
 						</div>
 					</div>
 				</section> */}
-                {/* <div className="dz-marquee style-2 bg-light">
-					<ul className="marquee-list">
-						{marqueelist2.map((data, i) => (
-							<li key={i} className={`item wow bounceIn ${data.columnstand}`} data-wow-delay={data.delay} data-wow-duration="0.8s"> {data.title} </li>
-						))}
-					</ul>
-				</div> */}
+          
                 <section className="content-inner-3 bg-light pb-0 overflow-hidden">
 					<div className="container">
 						<div className="row content-wrapper style-17 align-items-end justify-content-center">
