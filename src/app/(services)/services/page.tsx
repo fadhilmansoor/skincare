@@ -4,7 +4,7 @@ import Frequently from "@/component/Frequently";
 import PageBanner from "@/component/PageBanner";
 import TestimoniulSwiper from "@/component/TestimoniulSwiper";
 import WhyChoose from "@/component/WhyChoose";
-import { marqueelist1, marqueelist2 } from "@/constant/alldata";
+import { marqueelist1, } from "@/constant/alldata";
 import { IMAGES } from "@/constant/theme";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
@@ -80,14 +80,7 @@ function Services() {
                 </section>
 
                 {/* ── Marquee 2 ── */}
-                <div className="dz-marquee style-2">
-                    <ul className="marquee-list">
-                        {marqueelist2.map((data, i) => (
-                            <li key={i} className={`item wow bounceIn ${data.columnstand}`} data-wow-delay={data.delay} data-wow-duration="0.8s"> {data.title} </li>
-                        ))}
-                    </ul>
-                </div>
-
+                
                 {/* ── FAQ ── */}
                 <section className="content-inner">
                     <div className="container">

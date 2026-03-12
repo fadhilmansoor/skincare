@@ -4,7 +4,7 @@ import MainHeader from '@/layout/MainHeader'
 import Link from 'next/link';
 import HeroBanner from './_components/HeroBanner';
 import SkinCard1 from '@/component/SkinCard1';
-import { marqueelist1, marqueelist2 } from '@/constant/alldata';
+import { marqueelist1 } from '@/constant/alldata';
 import FlexSwiper from '@/component/FlexSwiper';
 import AfterTreatment from '@/component/AfterTreatment';
 import Filtertab from '@/component/Filtertab'
@@ -19,6 +19,8 @@ import VerticalSwiper from '@/component/VerticalSwiper';
 import BookAppointment from '@/component/BookAppointment';
 import ClientLogo from '@/component/ClientLogo';
 import Footer from '@/layout/Footer';
+import LocationsSection from '@/component/LocationsSection';
+import ImageGeneratorPage from '@/component/ImageGeneratorPage';
 
 const HomePage = () => {
     return(
@@ -99,13 +101,13 @@ const HomePage = () => {
 						</div>
 					</div>
 				</section> */}
-                <div className="dz-marquee style-2 bg-light">
+                {/* <div className="dz-marquee style-2 bg-light">
 					<ul className="marquee-list">
 						{marqueelist2.map((data, i) => (
 							<li key={i} className={`item wow bounceIn ${data.columnstand}`} data-wow-delay={data.delay} data-wow-duration="0.8s"> {data.title} </li>
 						))}
 					</ul>
-				</div>
+				</div> */}
                 <section className="content-inner-3 bg-light pb-0 overflow-hidden">
 					<div className="container">
 						<div className="row content-wrapper style-17 align-items-end justify-content-center">
@@ -130,10 +132,12 @@ const HomePage = () => {
 						<TestimoniulSwipers />
 					</div>
 				</section>
+				<ImageGeneratorPage />
 
                 <section className="content-wrapper style-18 bg-light">
 					<BookAppointment />
 				</section>
+				<LocationsSection />
 				{/* <div className="content-inner-4">
 					<div className="container">
 						<ClientLogo />

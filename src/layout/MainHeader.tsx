@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { IMAGES } from "../constant/theme";
 import React, { useEffect, useRef, useState } from "react";
@@ -77,7 +78,7 @@ function MainHeader({ transparent }: prop) {
 
               <div className="logo-header logo-dark">
                 <Link href="/">
-                  <Image src={IMAGES.logo} alt="logo" />
+                  <Image src={IMAGES.logo} alt="Signature Plus Clinic" />
                 </Link>
               </div>
 
@@ -104,7 +105,7 @@ function MainHeader({ transparent }: prop) {
               >
                 <div className="logo-header logo-dark">
                   <Link href="/">
-                    <Image src={IMAGES.logo} alt="" />
+                    <Image src={IMAGES.logo} alt="Signature Plus Clinic" />
                   </Link>
                 </div>
 
@@ -114,7 +115,6 @@ function MainHeader({ transparent }: prop) {
                       !!data.classChange?.includes("has-mega-menu") && !!data.content?.length;
                     const hasSubMenu = !!data.content?.length;
 
-                    // ✅ Direct link item (Home)
                     if (data.to && !hasSubMenu) {
                       return (
                         <li key={data.id || i}>
@@ -125,7 +125,6 @@ function MainHeader({ transparent }: prop) {
                       );
                     }
 
-                    // ✅ Mega menu
                     if (hasMegaMenu) {
                       return (
                         <li
@@ -155,7 +154,6 @@ function MainHeader({ transparent }: prop) {
                       );
                     }
 
-                    // ✅ Normal dropdown
                     return (
                       <li
                         key={data.id || i}
@@ -207,8 +205,6 @@ function MainHeader({ transparent }: prop) {
               <div className={`extra-nav ${scroll ? "active" : ""}`}>
                 <div className="extra-cell">
                   <ul className="header-right">
-         
-
                     <li className="nav-item item-call">
                       <div className="info-widget style-5">
                         <div className="widget-media">
@@ -216,8 +212,8 @@ function MainHeader({ transparent }: prop) {
                         </div>
                         <div className="widget-content">
                           <h6 className="title text-primary">Contact us</h6>
-                          <Link href="tel:+11234567890" className="text-secondary">
-                            +1 123 456 7890
+                          <Link href="tel:+97143333108" className="text-secondary">
+                            +971 433 33108
                           </Link>
                         </div>
                       </div>
@@ -252,13 +248,13 @@ function MainHeader({ transparent }: prop) {
             <div className="widget">
               <div className="sidebar-header m-b20">
                 <Link href="/">
-                  <Image src={IMAGES.logo} alt="/" />
+                  <Image src={IMAGES.logo} alt="Signature Plus Clinic" />
                 </Link>
               </div>
               <p>
-                ClinicMaster is a modern and responsive Bootstrap HTML template designed for health
-                and medical websites. Ideal for clinics, hospitals, and healthcare professionals
-                seeking a professional online presence with an elegant and user-friendly design.
+                Signature Plus Clinic is dedicated to advanced derma, dental, cosmetic, and hair
+                restoration care, combining modern technology with personalized treatment for
+                natural-looking results.
               </p>
             </div>
 
@@ -267,17 +263,21 @@ function MainHeader({ transparent }: prop) {
                 <h4 className="title">Contact Us</h4>
               </div>
               <ul className="list-check">
-                <li>785 15h Street, Office 478 Berlin, De 81566</li>
                 <li>
-                  <Link href="mailto:email@domain.com" className="text-body">
-                    email@domain.com
+                  Flat 605 - Sheikh Rashid Rd Al Garhoud, Garhoud Views Building - Dubai - United
+                  Arab Emirates
+                </li>
+                <li>
+                  <Link href="mailto:info@signatureplusclinic.com" className="text-body">
+                    info@signatureplusclinic.com
                   </Link>
                 </li>
                 <li>
-                  <Link href="tel:+11234567890" className="text-body">
-                    +1 123 456 7890
+                  <Link href="tel:+97143333108" className="text-body">
+                    +971 433 33108
                   </Link>
                 </li>
+                <li>Open daily: 11:00 AM - 10:00 PM</li>
               </ul>
             </div>
 

@@ -262,11 +262,31 @@ const HeroBanner = () => {
                 </div>
 
                 <div className="vertical-info left">
-                    <ul className="social-list">
-                        <li><Link href="https://www.instagram.com/dexignzone/" target="_blank">Instagram</Link></li>
-                        <li><Link href="https://www.facebook.com/dexignzone" target="_blank">Facebook</Link></li>
-                        <li><Link href="https://x.com/dexignzone" target="_blank">twitter</Link></li>
-                    </ul>
+               <ul className="social-list wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="0.8s">
+    <li>
+        <Link href="https://www.instagram.com/signatureplus_dubai" target="_blank">
+            Instagram
+        </Link>
+    </li>
+
+    <li>
+        <Link href="https://www.facebook.com/signatureplusclinic" target="_blank">
+            Facebook
+        </Link>
+    </li>
+
+    <li>
+        <Link href="https://www.tiktok.com/@signature_plus" target="_blank">
+            TikTok
+        </Link>
+    </li>
+
+    <li>
+        <Link href="https://www.snapchat.com/add/signatureclinic" target="_blank">
+            Snapchat
+        </Link>
+    </li>
+</ul>
                     <Link href={"#"} scroll={false} className="btn btn-white btn-sm px-2 py-3 btn-shadow rounded">LET'S TALK</Link>
                 </div>
                 <div className="banner-shape4" />
